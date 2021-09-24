@@ -1,4 +1,4 @@
-package MyMicroservices
+package GoMicroservice
 
 import "errors"
 
