@@ -9,7 +9,7 @@ var ErrNotFound = errors.New("not found")
 type User struct {
 	ID   int64
 	Name string
-	Age  int8
+	Age  int32
 }
 
 // Service defines the interface exposed by this package.

@@ -1,6 +1,6 @@
 package core
 
-import "github.com/mustofakamal71/GoMicroservice/MyMicroservices"
+import MyMicroservices "GoMicroservice"
 
 type service struct {
 	// a database dependency would go here but instead we're going to have a static map
@@ -11,9 +11,9 @@ type service struct {
 func NewService( /* a database connection would be injected here */ ) MyMicroservices.Service {
 	return &service{
 		m: map[int64]MyMicroservices.User{
-			1: {ID: 1, Name: "Alice"},
-			2: {ID: 2, Name: "Bob"},
-			3: {ID: 3, Name: "Carol"},
+			1: {ID: 1, Name: "Alice", Age: 18},
+			2: {ID: 2, Name: "Bob", Age: 20},
+			3: {ID: 3, Name: "Carol", Age: 21},
 		},
 	}
 }
